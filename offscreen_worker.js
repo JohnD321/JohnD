@@ -7,7 +7,7 @@ function animate(){
 }
 
 self.onmessage= function(ev){
-    if(ev.date.msg === 'offscreen') {
+    if(ev.data.msg === 'offscreen') {
         canvas= ev.data.canvas
         ctx= canvas.getContext('2d')
         animate()
